@@ -34,6 +34,7 @@ def haveFlatForm(request):
             return render(request,'service/pages/haveFlatForm.html',{'heading':heading,'headingTitle':headingTitle,'logReq':logReq})
         
         #profile = Profile.objects.filter(email = _email)
+        # hello
         _haveFlat = Have_Flat(location = _location, city = _city, state = _state, rent = _rent)
         _haveFlat.save()
         print('have flat form submited')
